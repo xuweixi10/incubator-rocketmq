@@ -90,7 +90,13 @@ public class BrokerController {
     private static final Logger log = LoggerFactory.getLogger(LoggerName.BROKER_LOGGER_NAME);
     private static final Logger LOG_PROTECTION = LoggerFactory.getLogger(LoggerName.PROTECTION_LOGGER_NAME);
     private static final Logger LOG_WATER_MARK = LoggerFactory.getLogger(LoggerName.WATER_MARK_LOGGER_NAME);
+    /**
+     * Broker配置类
+     */
     private final BrokerConfig brokerConfig;
+    /**
+     * netty服务配置，对于生产者和消费者来说，broker是服务器
+     */
     private final NettyServerConfig nettyServerConfig;
     private final NettyClientConfig nettyClientConfig;
     private final MessageStoreConfig messageStoreConfig;
